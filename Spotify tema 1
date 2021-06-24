@@ -1,0 +1,57 @@
+ fun main(){
+     var genero: Int
+     val listaRock = """ 
+      1- TrackRock 1
+      2- TrackRock 2
+      3- TrackRock 3
+   """
+     val listaJazz = """
+      1- TrackJazz 1
+      2- TrackJazz 2
+      3- TrackJazz 3
+     """
+     var opcionRep: Int
+ 
+     print("selecciona un genero, 1= Rock, 2= Jazz")
+     genero = readLine()?.toInt() as Int
+ 
+     if (genero==1) {
+ 
+         println("Seleccionaste el genero de ROCK, se reproducirá la siguiente lista de canciones $listaRock")
+         println("1-Detener 2- Reproducir 3-Repetir canción 4-Avanzar canción")
+         opcionRep = readLine()?.toInt() as Int
+         if (opcionRep==1){
+             println("Pausando canción...")
+         }
+         if (opcionRep==2){
+             println("Reproduciendo canción...")
+         }
+         if (opcionRep==3){
+             println("Repitiendo tu canción...")
+         }
+         if (opcionRep==4){
+             println("Reproduciendo la siguiente canción...")
+         }
+     } //llave final de la opcion 1
+     else {
+         println("")
+     }
+         if (genero == 2) {
+             println("Seleccionaste el genero de JAZZ, se reproducirá la siguiente lista de canciones $listaJazz")
+             println("1-Pausar 2- Reproducir 3-Repetir canción 4-Avanzar canción")
+             opcionRep = readLine()?.toInt() as Int
+             if (opcionRep == 1) {
+                 println("Pausando canción...")
+             }
+             if (opcionRep == 2) {
+                 println("Reproduciendo canción...")
+             }
+             if (opcionRep == 3) {
+                 println("Repitiendo tu canción...")
+             }
+             if (opcionRep == 4) {
+                 println("Reproduciendo la siguiente canción...")
+             }
+ 
+         }//llave final opcion 2
+ }//llave final
