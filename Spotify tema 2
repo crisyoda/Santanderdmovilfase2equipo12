@@ -1,4 +1,4 @@
- main(args: Array<String>) {
+fun main(args: Array<String>) {
     var lista1: List<String> = listOf("Electronicamix-varios", "Como la flor-Selena", "One more,dj", "Ameno-Era", "Atrévete","mingo")
     println("Reproducir la Playlist completá")
     println(lista1)
@@ -19,3 +19,4 @@
     println("Mostrar cancion la playlisten  y su posición ")
     for(posicion in lista1.indices)
         print("[$posicion]${lista1[posicion]} ")
+}
