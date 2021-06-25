@@ -7,4 +7,4 @@ Pseudo código :
 3. No pulsa play no reproduce cancion y muestra ficheros de canciones
 4. No detiene cancion sigue reproduciendo.
 5. Si detiene cancion muestra mensaje sorpresa.
-6 Regresa a ficheros
+6. Regresa a ficheros
