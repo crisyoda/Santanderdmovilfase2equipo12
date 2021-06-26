@@ -1,0 +1,52 @@
+/* *
+   ╔═══╗ ♪ 
+   ║███║ ♫ 
+   ║ (●) ♫ 
+   ╚═══╝♪♪ 
+ * */
+class Album {
+    var nombrecancion: String
+        get() {
+            println("..::Nombre de la cancion::..")
+            return field
+        }
+        set(nuevoNombrecancion) {
+            println("♪♪ ♫  Reproduciendo ♫ ♪♪ ")
+            field = nuevoNombrecancion
+        }
+
+    // Para posicion, dejamos el setter y getter implícito
+    var posicion: Int
+
+
+    constructor(nombrecancion: String, posicion: Int) {
+        this.nombrecancion = nombrecancion
+        this.posicion = posicion
+    }
+
+    fun saludar() {
+        println("¡Hola! soy el reproductor y escuchas  $nombrecancion y estoy en la posicion de la playlist $posicion Disfruta tu cancion")
+    }
+
+}
+
+
+fun main(argumentos: Array<String>) {
+    val album= Album("Dancing Monke", 1)
+    val elNombrecancion = album.nombrecancion // se llama a getNombre internamente
+    println("Estas escuchando: $elNombrecancion")
+    val laPosicion = album.posicion // Llamar a getposicion. Como no definimos el getter, no se imprime nada
+    println("La posicion es: $laPosicion")
+
+    // Cambiamos, llamamos a setNombrecancion
+    album.nombrecancion = "A quien e importa"
+    // Y ahora de nuevo a getNombrecancion
+    println("Reproduciendo la siguiente cancion es: ${album.nombrecancion}")
+    
+       // Cambiamos, llamamos a setNombrecancion
+    album.nombrecancion = "Cielito lindo"
+    // Y ahora de nuevo a getNombrecancion
+    println("Reproduciendo la siguiente cancion es: ${album.nombrecancion}")
+
+  
+}
